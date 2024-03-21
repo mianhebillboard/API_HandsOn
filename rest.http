@@ -1,0 +1,103 @@
+#
+#
+#tspot_details
+#
+#
+
+###get all
+GET http://localhost:3000/tspot_details/
+
+###post
+POST http://localhost:3000/tspot_details/
+Content-Type: application/json 
+
+{
+    "name": "Bob",
+    "address": "Cagayan de Oro City",
+    "phoneNumber": 123,
+    "time": {
+        "open": "9:00 am",
+        "close": "10:00 pm"
+    }
+}
+
+###get by id
+GET http://localhost:3000/tspot_details/65fc0d1786585ec3b948b1a0
+
+###patch by id
+PATCH http://localhost:3000/tspot_details/65fc0d1786585ec3b948b1a0
+Content-Type: application/json
+
+{
+    "address": "Manila Bay"
+}
+
+###delete by id
+DELETE http://localhost:3000/tspot_details/65fbfdc9e5ad3ac691367ff8
+
+#
+#
+#tspot_employee
+#
+#
+
+###get all
+GET http://localhost:3000/tspot_employee/
+
+###post
+POST http://localhost:3000/tspot_employee/
+Content-Type: application/json 
+
+{
+    "employee": {
+        "fname": "Whiskey",
+        "lname": "Winess"
+    }
+}
+
+###get by id
+GET http://localhost:3000/tspot_employee/65fc09a4a1d3e7069032c53d
+
+###patch by id
+PATCH http://localhost:3000/tspot_employee/65fc061629b5a8a628825326
+Content-Type: application/json
+
+{
+    "employee": {
+        "fname": "Reminderyyy"
+    }
+}
+
+###delete by id
+DELETE http://localhost:3000/tspot_employee/65fc061629b5a8a628825326
+
+#
+#
+#tspot_reservation
+#
+#
+
+###get all
+GET http://localhost:3000/tspot_reservation/
+
+###post
+POST http://localhost:3000/tspot_reservation/
+Content-Type: application/json 
+
+{
+    "date": "July 02, 2003"
+}
+
+###get by id
+GET http://localhost:3000/tspot_reservation/65fc0cbc86585ec3b948b197
+
+###patch by id
+PATCH http://localhost:3000/tspot_reservation/65fc0cbc86585ec3b948b197
+Content-Type: application/json
+
+{
+    "date": "January 2, 2003"
+}
+
+###delete by id
+DELETE http://localhost:3000/tspot_reservation/65fc0cbc86585ec3b948b197
